@@ -23,7 +23,7 @@ private:
     int s;          // 起始点
     bool *visited;  // 记录dfs的过程中节点是否被访问
     int *from;      // 记录路径, from[i]表示查找的路径上i的上一个节点
-    int *ord;       // 记录路径中节点的次序。ord[i]表示i节点在路径中的次序。
+    int *ord;       // 记录起点到当前节点的最短距离 ord[i]表示起点s到哪节点i的最短距离
 
 public:
     // 构造函数, 寻找无权图graph从s点到其他点的最短路径
